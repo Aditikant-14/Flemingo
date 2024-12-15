@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Builder</title>
+    <link rel="stylesheet" href="vocabulary.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">VocabLearn</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#vocabulary">Vocabulary</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section home">
+            <h1>Welcome to VocabLearn</h1>
+            <p>Improve your vocabulary with interactive and fun lessons!</p>
+        </section>
+
+        <section id="features" class="section features">
+            <h2>Features</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>Interactive Exercises</h3>
+                    <p>Engage in fun activities to learn new words.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your learning journey.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Daily Challenges</h3>
+                    <p>Complete daily goals to stay motivated.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vocabulary" class="section vocabulary">
+            <h2>Learn New Words</h2>
+            <div class="word-list">
+                <button class="word-item">Gratitude</button>
+                <button class="word-item">Benevolent</button>
+                <button class="word-item">Euphoria</button>
+                <button class="word-item">Camaraderie</button>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 VocabLearn. All rights reserved.</p>
+    </footer>
+
+    <script src="vocabulary.js"></script>
+</body>
+</html>
