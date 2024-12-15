@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flamingo Quiz</title>
+  <link rel="stylesheet" href="vocabulary-quiz.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Flamingo Quiz</h1>
+      <div>
+        <!-- <button onclick="goToPage('leaderboard')">Leaderboard</button> -->
+        <button onclick="goToPage('logout')">Logout</button>
+        <button onclick="goToPage('home')">Home</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="quiz-container">
+      <div class="progress-bar">
+        <div id="progress"></div>
+      </div>
+      <p id="question-text">Translate 'Namaste' into English.</p>
+      <button class="pronounce-btn" onclick="speakText(currentQuestion.text)">🔊 Pronounce</button>
+      <div class="options">
+        <button id="option1" onclick="selectAnswer(0)">Option 1</button>
+        <button id="option2" onclick="selectAnswer(1)">Option 2</button>
+        <button id="option3" onclick="selectAnswer(2)">Option 3</button>
+      </div>
+      <button id="next-btn" onclick="nextQuestion()" disabled>Next Question</button>
+      <p id="timer">Time Left: <span id="time-remaining">30</span> seconds</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2024 Flamingo Language Learning | <a href="#">About Us</a> | <a href="#">Contact</a> | <a href="#">Terms of Service</a>
+  </footer>
+
+  <script src="vocabulary-quiz.js"></script>
+</body>
+</html>

@@ -21,6 +21,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
+    
 }
 
 .navbar .logo {
@@ -108,7 +109,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.footer {
+/* .footer {
     background:  #4B0082;
     color: #fff;
     text-align: center;
@@ -116,4 +117,4 @@ body {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
+} */

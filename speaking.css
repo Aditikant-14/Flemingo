@@ -1,101 +1,178 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #6200ea;;
+  background-color: #4CAF50;
   color: white;
-  padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
   display: flex;
+  gap: 1.5rem;
 }
 
-nav ul li {
-  margin: 0 10px;
+.nav-links li {
+  display: inline;
 }
 
-nav ul li a {
+.nav-links a {
   color: white;
   text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
 }
 
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #4CAF50;
+}
+
+.practice-box {
+  background: white;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.practice-box h2 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.practice-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.practice-box button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.practice-box button:hover {
+  background-color: #45A049;
+}
+
+/* Quiz Section */
+.quiz-container {
+  background: white;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#question-box h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#options button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#options button:hover {
+  background-color: #f1f1f1;
+}
+
+#options button.correct {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#options button.wrong {
+  background-color: #FF4D4D;
+  color: white;
+}
+
+#progress, #time {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Footer */
 footer {
-  background-color: #6200ea;;
+  background-color: #4CAF50;
   color: white;
   text-align: center;
-  padding: 10px 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 1rem 0;
+  margin-top: 2rem;
 }
 
-.container {
-  margin-top: 80px;
-  padding: 20px;
-}
-
-.box {
-  border: 1px solid #6200ea;;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #6200ea;;
-}
-
-.course {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 5px;
-}
-
-.course h3 {
-  margin: 0 0 10px;
-}
-
-.course p {
+footer p {
   margin: 0;
+  font-size: 0.9rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #6200ea;;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-.btn:hover {
-  background-color: #6200ea;;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-  nav ul {
+  .nav-links {
       flex-direction: column;
-      align-items: flex-start;
+      gap: 1rem;
   }
 
-  nav ul li {
-      margin: 5px 0;
+  .practice-box, .quiz-container {
+      padding: 1rem;
+  }
+
+  #options {
+      flex-direction: column;
   }
 }

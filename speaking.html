@@ -3,58 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn English Speaking</title>
+    <title>Flamingo - Speaking Practice 🦩</title>
     <link rel="stylesheet" href="speaking.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">English Speaking Hub</div>
-            <ul>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="logo">Flamingo 🦩</div>
+            <ul class="nav-links">
+                <li><a href="#practice">Speaking Practice</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#footer">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Interactive speaking exercises</li>
-                <li>Personalized feedback from experts</li>
-                <li>Engaging video lessons</li>
-                <li>Live practice sessions</li>
-                <li>Progress tracking dashboard</li>
-            </ul>
-        </section>
-
-        <section id="courses">
-            <h2>Courses</h2>
-            <div class="course">
-                <h3>Beginner English Speaking</h3>
-                <p>Learn the basics of English speaking, including vocabulary and pronunciation.</p>
-                <a href="#" class="btn">Enroll Now</a>
+    <main>
+        <!-- Speaking Practice Section -->
+        <section id="practice">
+            <h1>Speaking Practice 🗣️</h1>
+            <div class="practice-box">
+                <h2>Why is Speaking Practice Important? 💬</h2>
+                <p>Speaking helps you communicate effectively in English. Regular practice enhances fluency, clarity, and confidence.</p>
+                <button onclick="speak('Speaking helps you communicate effectively in English.')">🔊 Listen</button>
             </div>
 
-            <div class="course">
-                <h3>Intermediate Conversation Skills</h3>
-                <p>Enhance your conversational English with real-world scenarios and role-playing exercises.</p>
-                <a href="#" class="btn">Enroll Now</a>
-            </div>
-
-            <div class="course">
-                <h3>Advanced Fluency Program</h3>
-                <p>Achieve fluency and confidence in speaking English with advanced lessons and practice.</p>
-                <a href="#" class="btn">Enroll Now</a>
+            <div class="practice-box">
+                <h2>Tips for Better Pronunciation 🔊</h2>
+                <ul>
+                    <li>Break words into syllables.</li>
+                    <li>Listen to native speakers.</li>
+                    <li>Use online tools for pronunciation practice.</li>
+                </ul>
+                <button onclick="speak('Break words into syllables. Listen to native speakers. Use online tools for pronunciation practice.')">🔊 Listen</button>
             </div>
         </section>
-    </div>
 
-    <footer>
-        <p>&copy; 2024 English Speaking Hub. All rights reserved.</p>
+        <!-- Quiz Section -->
+        <section id="quiz">
+            <h1>Speaking Quiz 📝</h1>
+            <div class="quiz-container">
+                <div id="question-box">
+                    <h2 id="question">Question will appear here</h2>
+                    <div id="options"></div>
+                </div>
+                <button id="next-btn" onclick="loadNextQuestion()">Next</button>
+                <p id="progress">Question 1/50</p>
+                <p id="time">Time Remaining: <span id="timer">60</span> seconds</p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>© 2024 Flamingo 🦩 - All rights reserved.</p>
     </footer>
-    <script src="speaking.js"></script>
+
+    <script src="speacking.js"></script>
 </body>
 </html>
